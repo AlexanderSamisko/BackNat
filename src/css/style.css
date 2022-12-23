@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "Golos-regular";
+    src: url(/src/fonts/Golos-Text-Regular.web/PT/PT/Golos-Text/golos-text_regular.woff);
+}
+
+@font-face {
+    font-family: "Golos-demibold";
+    src: url(/src/fonts/Golos-Text-DemiBold.web/PT/PT/Golos-Text/golos-text_demibold.woff);
+}
+
+body{
+    background-color: #28292d;
+    font-family: "Golos-regular";
+}
+  
+.common-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    
+    
+    border: 2px solid black;
+}
+
+.logo-group {
+    display: flex;
+    color: white;
+    font-family: "Golos-demibold";
+    font-size: 1.5vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw;
+    text-transform: uppercase;
+    line-height: 0;
+}
+
+.logo-group svg {
+    display: block;
+    height: 2em;
+    width: fit-content;
+}
+
+.logo-group h1 {
+    margin-left: 18px;
+    font-size: 2em;
+}
+
+.questionaries {
+    border: 3px double white;
+}
+
+.desk-header {
+    border-bottom: 3px double white;
+    padding: 3vw;
+}
+
+.desk-header-title {
+    margin: auto;
+    width: fit-content;
+    color: white;
+    font-family: "Golos-demibold";
+}
+
+.desk-info {
+    color: white;
+    width: 75%;
+    margin: 2vw auto;
+    text-align: center;
+}
+
+.desk-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+}
+
+.answer-field {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    width: 70%;
+    resize: none;
+    height: 6vw;
+    border-top-left-radius: 43px;
+    border-bottom-left-radius: 43px;
+    padding: 4px 51px;
+}
+
+.answer-field:focus {
+    outline: none;
+}
+
+.push-btn {
+    height: 6vw;
+    width: 6vw;
+    border-radius: 50%;
+    position: relative;
+    font-size: 2vw;
+    z-index: 12;
+    left: -3vw;
+    padding: 0;
+    cursor: pointer;
+}
+
+.options {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.options input {
+    width: 1px;
+    height: 1px;
+    background-color: #28292d;
+    margin: 0;
+    position: absolute;
+ }
+ 
+
+.options label {
+    display: inline-flex;
+    width: 6vw;
+    height: 6vw;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.options label span {
+    font-size: 4vw;
+
+}
+
+
+.options input:focus + label {
+    outline-offset: -2px;
+    outline: 1px double black;
+}
+
+.options label:last-of-type {
+    margin-right: 3vw;
+}
+
+
+.options input:nth-of-type(10):checked + label {
+    background-color: #4BD0A0;
+    color: white;
+}
+
+.options input:nth-of-type(9):checked + label {
+    background-color: #47C397;
+    color: white;
+}
+
+.options input:nth-of-type(8):checked + label {
+    background-color: #7AEEC4;
+    color: white;
+}
+
+.options input:nth-of-type(7):checked + label {
+    background-color: #A2FFDD;
+    color: white;
+}
+
+.options input:nth-of-type(6):checked + label {
+    background-color: #ffbee5;
+    color: white;
+}
+
+.options input:nth-of-type(5):checked + label {
+    background-color: #ffbee5;
+    color: white;
+}
+
+.options input:nth-of-type(4):checked + label {
+    background-color: #ffbee5;
+    color: white;
+}
+
+.options input:nth-of-type(3):checked + label {
+    background-color: #f297ce;
+    color: white;
+}
+
+.options input:nth-of-type(2):checked + label {
+    background-color: #f297ce;
+    color: white;
+}
+
+.options input:nth-of-type(1):checked + label {
+    background-color: #EB236B;
+    color: white;
+}
